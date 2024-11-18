@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="3"
+            failures="0"
+            tests="1">
+
+  <testsuite name="test.View_order"
+    errors="3" failures="0" hostname="" id="" package="View_order" skipped="0"
+    tests="1" time="43.57" timestamp="">
+  
+    <testcase name="tests View_order" classname="test.View_order" time="21.78" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;tr:nth-of-type(1) a.view &gt; span&gt;: Timed out while waiting for element &#34;tr:nth-of-type(1) a.view &gt; span&#34; with &#34;css selector&#34; to be present for 5000 milliseconds." type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\HP\Desktop\Testing3\test\View_order.js:44:4)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;div.panel button&gt;: Timed out while waiting for element &#34;div.panel button&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\View_order.js:42
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+     40 |           })
+     41 |   .setValue(&#34;div.page-wrapper div.password input&#34;, &#34;Harshal@123&#34;)
+     42 |   .click(&#34;div.panel button&#34;) 
+     43 |   .click(&#34;div.panel li:nth-of-type(1) &gt; a&#34;)
+     44 |   .click(&#34;tr:nth-of-type(1) a.view &gt; span&#34;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;div.panel li:nth-of-type(1) &gt; a&gt;: Timed out while waiting for element &#34;div.panel li:nth-of-type(1) &gt; a&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\View_order.js:43
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+     41 |   .setValue(&#34;div.page-wrapper div.password input&#34;, &#34;Harshal@123&#34;)
+     42 |   .click(&#34;div.panel button&#34;)
+     43 |   .click(&#34;div.panel li:nth-of-type(1) &gt; a&#34;) 
+     44 |   .click(&#34;tr:nth-of-type(1) a.view &gt; span&#34;)
+     45 |   .perform(function() {
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;tr:nth-of-type(1) a.view &gt; span&gt;: Timed out while waiting for element &#34;tr:nth-of-type(1) a.view &gt; span&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\View_order.js:44
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+     42 |   .click(&#34;div.panel button&#34;)
+     43 |   .click(&#34;div.panel li:nth-of-type(1) &gt; a&#34;)
+     44 |   .click(&#34;tr:nth-of-type(1) a.view &gt; span&#34;) 
+     45 |   .perform(function() {
+     46 |             const actions = this.actions({async: true});
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

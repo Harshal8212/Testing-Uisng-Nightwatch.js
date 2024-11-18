@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="10"
+            failures="0"
+            tests="1">
+
+  <testsuite name="test.wishlist"
+    errors="10" failures="0" hostname="" id="" package="wishlist" skipped="0"
+    tests="1" time="100.7" timestamp="">
+  
+    <testcase name="tests wishlist" classname="test.wishlist" time="50.33" assertions="0">
+    <error message="Error while running &#34;perform&#34; command: [NoSuchWindowError] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.89)" type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\HP\Desktop\Testing3\test\wishlist.js:38:4)
+    at Context.call (C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\testsuite\context.js:515:35)
+    at TestCase.run (C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\testsuite\index.js:839:80)
+    at Runnable.run (C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.executeRunnable (C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\testsuite\index.js:1000:49)
+    at TestSuite.handleRunnable (C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\testsuite\index.js:1015:33)
+    at C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\testsuite\index.js:839:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DefaultRunner.runTestSuite (C:\Users\HP\Desktop\Testing3\node_modules\nightwatch\lib\runner\test-runners\default.js:83:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       TimeoutError
+   An error occurred while running .click() command on &lt;li:nth-of-type(3) a.towishlist&gt;: element not interactable
+  (Session info: MicrosoftEdge=129.0.2792.89)
+    {&#34;error&#34;:{&#34;name&#34;:&#34;ElementNotInteractableError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\wishlist.js:5
+    –––––––––––––––––––––––––––––––––––––––––––––––
+     3 |   browser.windowRect({width: 1263, height: 632})
+     4 |   .navigateTo(&#34;https://magento.softwaretestingboard.com/&#34;)
+     5 |   .click(&#34;li:nth-of-type(3) a.towishlist&#34;) 
+     6 |   .click(&#34;#email&#34;)
+     7 |   .setValue(&#34;#email&#34;, &#34;harshalrane&#34;)
+    –––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;#email&gt;: Timed out while waiting for element &#34;#email&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\wishlist.js:6
+    –––––––––––––––––––––––––––––––––––––––––––––––
+     4 |   .navigateTo(&#34;https://magento.softwaretestingboard.com/&#34;)
+     5 |   .click(&#34;li:nth-of-type(3) a.towishlist&#34;)
+     6 |   .click(&#34;#email&#34;) 
+     7 |   .setValue(&#34;#email&#34;, &#34;harshalrane&#34;)
+     8 |   .perform(function() {
+    –––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;#email&gt;: Timed out while waiting for element &#34;#email&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\wishlist.js:7
+    –––––––––––––––––––––––––––––––––––––––––––––––
+     5 |   .click(&#34;li:nth-of-type(3) a.towishlist&#34;)
+     6 |   .click(&#34;#email&#34;)
+     7 |   .setValue(&#34;#email&#34;, &#34;harshalrane&#34;) 
+     8 |   .perform(function() {
+     9 |             const actions = this.actions({async: true});
+    –––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;#email&gt;: Timed out while waiting for element &#34;#email&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\wishlist.js:32
+    –––––––––––––––––––––––––––––––––––––––––––––––
+     30 |             .keyUp(this.Keys.SHIFT);
+     31 |           })
+     32 |   .setValue(&#34;#email&#34;, &#34;harshalrane50@gmail.com&#34;) 
+     33 |   .click(&#34;div.page-wrapper div.password input&#34;)
+     34 |   .setValue(&#34;div.page-wrapper div.password input&#34;, &#34;H&#34;)
+    –––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;div.page-wrapper div.password input&gt;: Timed out while waiting for element &#34;div.page-wrapper div.password input&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;div.page-wrapper div.password input&gt;: Timed out while waiting for element &#34;div.page-wrapper div.password input&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;div.page-wrapper div.password input&gt;: Timed out while waiting for element &#34;div.page-wrapper div.password input&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;div.page-wrapper div.block-customer-login div.primary span&gt;: Timed out while waiting for element &#34;div.page-wrapper div.block-customer-login div.primary span&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;button.share &gt; span&gt;: Timed out while waiting for element &#34;button.share &gt; span&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+   NoSuchWindowError   Error while running &#34;perform&#34; command: [NoSuchWindowError] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.89)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

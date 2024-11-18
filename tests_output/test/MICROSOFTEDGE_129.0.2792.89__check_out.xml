@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="1">
+
+  <testsuite name="test.check_out"
+    errors="2" failures="0" hostname="" id="" package="check_out" skipped="0"
+    tests="1" time="29.60" timestamp="">
+  
+    <testcase name="tests check_out" classname="test.check_out" time="14.80" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;div.payment-method-content &gt; div.actions-toolbar span&gt;: Timed out while waiting for element &#34;div.payment-method-content &gt; div.actions-toolbar span&#34; with &#34;css selector&#34; to be present for 5000 milliseconds." type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\HP\Desktop\Testing3\test\check_out.js:6:4)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;#shipping-method-buttons-container span&gt;: Timed out while waiting for element &#34;#shipping-method-buttons-container span&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\check_out.js:5
+    ––––––––––––––––––––––––––––––––––––––––––––––––
+     3 |   browser.windowRect({width: 1263, height: 632})
+     4 |   .navigateTo(&#34;https://magento.softwaretestingboard.com/checkout/#shipping&#34;)
+     5 |   .click(&#34;#shipping-method-buttons-container span&#34;) 
+     6 |   .click(&#34;div.payment-method-content &gt; div.actions-toolbar span&#34;)
+     7 |   .perform(function() {
+    ––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;div.payment-method-content &gt; div.actions-toolbar span&gt;: Timed out while waiting for element &#34;div.payment-method-content &gt; div.actions-toolbar span&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\HP\Desktop\Testing3\test\check_out.js:6
+    ––––––––––––––––––––––––––––––––––––––––––––––––
+     4 |   .navigateTo(&#34;https://magento.softwaretestingboard.com/checkout/#shipping&#34;)
+     5 |   .click(&#34;#shipping-method-buttons-container span&#34;)
+     6 |   .click(&#34;div.payment-method-content &gt; div.actions-toolbar span&#34;) 
+     7 |   .perform(function() {
+     8 |             const actions = this.actions({async: true});
+    ––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
